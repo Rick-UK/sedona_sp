@@ -23,7 +23,7 @@ body {
   line-height: 14px;
 }
 .page-header {
-  width: 320px;
+  width: 320px ;
   min-height: 55px;
   background-color: #957774;
   position: relative;
@@ -51,7 +51,7 @@ body {
   display: block;
 }
 .page-header__burger:checked ~ label::before {
-  top: 270px;
+  top: 239px;
 }
 .page-header__burger:checked ~ label::after {
   display: block;
@@ -63,7 +63,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 20px;
+  top: 17px;
   right: 20px;
   width: 23px;
   height: 22px;
@@ -74,7 +74,7 @@ body {
   content: "";
   display: none;
   position: absolute;
-  top: 20px;
+  top: 17px;
   right: 20px;
   width: 23px;
   height: 22px;
@@ -106,8 +106,8 @@ body {
   vertical-align: middle;
   min-height: 55px;
   width: 100%;
-  padding-top: 21px;
-  padding-bottom: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
   -webkit-transition: background-color 0.2s, color 0.2s;
@@ -135,4 +135,28 @@ body {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+  z-index: 2;
+}
+.intro {
+  width: 320px;
+  min-height: 26px;
+  position: relative;
+  margin: 0 auto;
+  padding: 90px 0 80px 0;
+  background-color: #957774;
+  background-image: url(../img/intro-bg-mobile.jpg);
+  background-position: 50% 0;
+  background-size: cover;
+  text-align: center;
+}
+.intro::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  width: 0;
+  height: 0;
+  border-top: 26px solid transparent;
+  border-right: 160px solid white;
+  border-left: 160px solid white;
 }
