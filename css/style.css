@@ -90,6 +90,7 @@ body {
   height: 22px;
   background-color: white;
   background-image: url(../img/icon-menu.svg.png);
+  cursor: pointer;
 }
 .page-header__label::after {
   content: "";
@@ -99,9 +100,9 @@ body {
   right: 20px;
   width: 23px;
   height: 22px;
-  background-color: #81b3d2;
   background-image: url(../img/icon-cross.png);
   z-index: 0;
+  cursor: pointer;
 }
 .page-header__span {
   font-size: 0;
