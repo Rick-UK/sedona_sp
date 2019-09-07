@@ -61,6 +61,9 @@ body{
   margin: 0;
 }
 
+.section{
+  width: 320px;
+}
 
 // *****Header*****
 
@@ -223,5 +226,38 @@ body{
     border-top: 16px solid transparent;
     border-right: 160px solid @page-header__link--bg-color;
     border-left: 160px solid @page-header__link--bg-color;
+  }
+}
+
+.main{
+  width: 320px;
+  margin: 0 auto;
+  background-color:@page-header__link--bg-color;
+  color: @page-header__link--color;
+  &__section-one{
+    width: 320px;
+    box-sizing: border-box;
+    padding: 40px 20px 40px 20px;
+    text-align: center;
+  }
+  &__title--one{
+    margin: 0 0 5px 0;
+  }
+  &__text--number{
+    margin: 0 0 10px 0;
+  }
+  &__text--one{
+    line-height: 22px;
+  }
+  &__section-two{
+    width: 320px;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+    &-photo{
+      position: absolute;
+      top: 0px;
+      right: -100px;
+    }
   }
 }
