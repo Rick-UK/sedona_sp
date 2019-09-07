@@ -14,11 +14,6 @@ body {
   margin: 0;
   padding: 0;
 }
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 .link {
   text-decoration: none;
   font-family: "PT Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -29,11 +24,73 @@ body {
 }
 .page-header {
   width: 320px;
-  min-height: 680px;
+  min-height: 55px;
   background-color: #957774;
   position: relative;
   margin: 0 auto;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+.page-header__burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.page-header__burger:checked ~ nav {
+  display: block;
+}
+.page-header__burger:checked ~ label::before {
+  top: 270px;
+}
+.page-header__burger:checked ~ label::after {
+  display: block;
+}
+.page-header__label {
+  height: 0px;
+}
+.page-header__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
+  background-color: white;
+  background-image: url(../img/icon-menu.svg.png);
+}
+.page-header__label::after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
+  background-color: #81b3d2;
+  background-image: url(../img/icon-cross.png);
+  z-index: 0;
+}
+.page-header__span {
+  font-size: 0;
+}
+.page-header__nav {
+  display: none;
+}
+.page-header a:last-child {
+  -webkit-box-shadow: inset 0px -2px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px -2px 4px 0px rgba(0, 0, 0, 0.2);
 }
 .page-header__link {
   display: inline-block;
@@ -51,6 +108,31 @@ body {
   width: 100%;
   padding-top: 21px;
   padding-bottom: 20px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  -o-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+}
+.page-header__link:hover {
+  background-color: #669ec0;
+}
+.page-header__link:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+.page-header__logo-wrap {
+  min-height: 55px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+.page-header__logo-img {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
