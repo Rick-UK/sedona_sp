@@ -66,6 +66,13 @@ body{
   width: 320px;
 }
 
+.btn{
+  background-color: @page-header__link--bg-color;
+  box-sizing: border-box;
+  padding:17px 0 17px 0;
+}
+
+
 // *****Header*****
 
 .page-header{
@@ -436,6 +443,42 @@ body{
 
   &__text--ten{
     line-height: 22px;
+  }
+
+}
+
+.search{
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 30px 20px 49px 20px;
+  text-align: center;
+  &-wrap{
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  &__title{
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 18px;
+  }
+
+  &__text{
+    line-height: 23px;
+    margin-bottom: 36px;
+  }
+
+  &__link-wrap{
+    text-align: center;
+  }
+
+  &__link{
+    text-transform: uppercase;
+    color: @page-header__link--color;
+    font-size: 21px;
+    line-height: 26px;
   }
 
 }
