@@ -1,5 +1,6 @@
 @page-header--bg-color:white;
 @page-header--bg-contrast-color:#957774;
+@page-header--bg-color2:#eeeeee;
 @page-header__link--bg-color:#81b3d2;
 @page-header__link--bg-color-hover:#669ec0;
 @page-header__link--bg-color-active:#5496bd;
@@ -234,6 +235,9 @@ body{
   width: 320px;
   margin: 0 auto;
   background-color:@page-header__link--bg-color;
+
+  // css main__part-one
+
   &__section-one{
     width: 320px;
     box-sizing: border-box;
@@ -244,8 +248,8 @@ body{
   &__title--one{
     margin: 0 0 5px 0;
   }
-  &__text--number{
-    margin: 0 0 10px 0;
+  &__text--number-one{
+    margin: 0 0 12px 0;
   }
   &__text--one{
     line-height: 22px;
@@ -261,11 +265,14 @@ body{
       right: -100px;
     }
   }
+
+  // css main__part-two
+
   &__part-two{
     width: 320px;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 26px 0 42px 0;
+    padding: 26px 0 39px 0;
     background-color: @page-header--bg-color;
   }
 
@@ -276,18 +283,18 @@ body{
   }
   &__section-three--wrap{
     box-sizing: border-box;
-    padding: 11px 0 0 48px;
+    padding: 10px 0 0 49px;
     background-image: url("../img/icon-house--mobile.png");
     background-size: 39px 37px;
     background-repeat: no-repeat;
     background-position: top left;
   }
   &__title--three{
-    margin: 0 0 10px 0;
+    margin: 0 0 13px 0;
   }
 
   &__text--three{
-    line-height: 23px;
+    line-height: 22px;
   }
 
   &__section-four{
@@ -326,6 +333,109 @@ body{
   }
   &__text--five{
     line-height: 21px;
+  }
+
+  // css main_part-three
+  &__section-six{
+    width: 320px;
+    box-sizing: border-box;
+    padding: 38px 20px 39px 20px;
+    text-align: center;
+    color: @page-header__link--color;
+  }
+  &__title--six{
+    margin: 0 0 5px 0;
+  }
+  &__text--number-six{
+    margin: 0 0 12px 0;
+  }
+  &__text--six{
+    line-height: 22px;
+  }
+  &__section-seven{
+    width: 320px;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+    &-photo{
+      position: absolute;
+      top: 0px;
+      right: -100px;
+    }
+  }
+
+  // css main_part-four
+  &__part-four{
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 26px 0 0 0;
+    background-color: @page-header--bg-color2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__section-eight{
+    width: 280px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 16px 27px 16px;
+    margin: 0 0 22px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  &__title--eight{
+    margin: 0 0 6px 0;
+  }
+
+  &__text--number-eight{
+    margin: 0 0 11px 0;
+  }
+
+  &__text--eight{
+    line-height: 22px;
+  }
+
+  &__section-nine{
+    width: 280px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 4px 16px 28px 16px;
+    margin: 0 0 22px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  &__title--nine{
+    margin: 0 0 6px 0;
+  }
+
+  &__text--number-nine{
+    margin: 0 0 11px 0;
+  }
+
+  &__text--nine{
+    line-height: 22px;
+  }
+
+  &__section-ten{
+    width: 280px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 4px 16px 28px 16px;
+  }
+
+
+
+  &__title--ten{
+    margin: 0 0 6px 0;
+  }
+
+  &__text--number-ten{
+    margin: 0 0 11px 0;
+  }
+
+  &__text--ten{
+    line-height: 22px;
   }
 
 }
