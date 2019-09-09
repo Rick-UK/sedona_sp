@@ -66,12 +66,6 @@ body{
   width: 320px;
 }
 
-.btn{
-  background-color: @page-header__link--bg-color;
-  box-sizing: border-box;
-  padding:17px 0 17px 0;
-}
-
 
 // *****Header*****
 
@@ -470,16 +464,119 @@ body{
     margin-bottom: 36px;
   }
 
-  &__link-wrap{
-    text-align: center;
-  }
+  // &__link-wrap{
+  //   text-align: center;
+  //   &:hover{
+  //     background-color: @page-header__link--bg-color-hover;
+  //   }
+  //   &:active{
+  //     background-color: @page-header__link--bg-color-active;
+  //   }
+  //   &:active + a{
+  //     color: @page-header__link--color-active;
+  //   }
+  // }
 
   &__link{
+    display: block;
+    vertical-align: middle;
+    background-color: @page-header__link--bg-color;
+    box-sizing: border-box;
+    padding:17px 0 17px 0;
     text-transform: uppercase;
     color: @page-header__link--color;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    &:hover{
+        background-color: @page-header__link--bg-color-hover;
+      }
+      &:active{
+        background-color: @page-header__link--bg-color-active;
+        color: @page-header__link--color-active;
+      }
   }
 
+}
+
+.map{
+  margin: 0 auto;
+  width: 320px;
+  height: 350px;
+}
+
+.footer{
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 320px;
+  padding: 37px 0 23px 0;
+  text-align: center;
+  &__title{
+    font-size: 21px;
+    line-height: 26px;
+    margin:0 0 28px 0;;
+  }
+  &__links{
+    margin: 0 0 40px 0;
+  }
+  &__twitter{
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    background-color: @page-header__link--bg-color;
+    background-image: url(../img/icon-twitter.png);
+    background-size: 18px 14px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-size: 0;
+  }
+  &__facebook{
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    background-color: @page-header__link--bg-color;
+    background-image: url(../img/icon-facebook.png);
+    background-size: 9px 18px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-size: 0;
+  }
+  &__youtube{
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    background-color: @page-header__link--bg-color;
+    background-image: url(../img/icon-youtube.png);
+    background-size: 20px 14px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-size: 0;
+  }
+
+  &__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__dev{
+    color: black;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+  &__dev_logo{
+    display: inline-block;
+    width: 27px;
+    height: 34px;
+    background-image: url(../img/htmlacademy.png);
+    background-size: 27px 34px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 0;
+    &:hover{
+      background-image: url(../img/htmlacademy_hover.png);
+    }
+    &:active{
+      background-image: url(../img/htmlacademy_active.png);
+    }
+  }
 }
