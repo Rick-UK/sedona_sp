@@ -6,6 +6,9 @@
 @page-header__link--bg-color-active:#5496bd;
 @page-header__link--color:white;
 @page-header__link--color-active:#94b9d2;
+@mobile-width:320px;
+@tablet-width:768px;
+@desktop-width:1200px;
 
 // *****fonts*****
 @font-face {
@@ -30,8 +33,6 @@ body{
 }
 
 // ******Elements*****
-
-
 
 .link{
   text-decoration: none;
@@ -131,8 +132,6 @@ body{
     font-size: 0;
   }
 
-
-
   &__nav{
     display: none;
   }
@@ -189,6 +188,65 @@ body{
   }
 }
 
+@media (min-width:@tablet-width) {
+  .page-header__burger,
+  .page-header__label,
+  .page-header__span{
+    display: none;
+  }
+
+  .page-header{
+    width: @tablet-width;
+    flex-direction: column;
+
+    a:first-child{
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    a:last-child{
+      box-shadow: none;
+    }
+
+    a:nth-of-type(2){
+      margin-right: auto;
+    }
+    a:nth-of-type(3){
+      margin-left: auto;
+    }
+
+    &__logo-wrap{
+      min-height: 0px;
+    }
+    &__nav{
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      min-height: 55px;
+      background-color: @page-header--bg-color;
+
+    }
+    &__link{
+      border: none;
+      color: black;
+      width: 163px;
+      padding: 18px 5px;
+      background-color: @page-header--bg-color;
+      &:hover{
+        background-color: @page-header--bg-color;
+        color: @page-header__link--bg-color;
+      }
+      &:active{
+        background-color: @page-header--bg-color;
+        color: @page-header--bg-color2;
+      }
+    }
+  }
+
+}
+
+// *****intro*****
+
 .intro{
   width: 320px;
   min-height: 26px;
@@ -212,6 +270,34 @@ body{
     border-left: 160px solid @page-header--bg-color;
   }
 }
+
+@media (min-width:@tablet-width) {
+  .intro{
+    width: @tablet-width;
+    background-image: url(../img/intro-bg-desktop.jpg);
+    &::before{
+      content:"";
+      position: absolute;
+      display: block;
+      bottom: 0px;
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-right: 384px solid @page-header--bg-color;
+      border-left: 384px solid @page-header--bg-color;
+    }
+
+    &::after{
+      left: 50%;
+      transform: translateX(-50%);
+      border-right: 350px solid @page-header--bg-color;
+      border-left: 350px solid @page-header--bg-color;
+    }
+  }
+
+}
+
+// *****about*****
 
 .about{
   width: 320px;
@@ -512,7 +598,7 @@ body{
     &:hover{
         background-color: @page-header__link--bg-color-hover;
       }
-      &:active{
+    &:active{
         background-color: @page-header__link--bg-color-active;
         color: @page-header__link--color-active;
       }
@@ -551,6 +637,12 @@ body{
     background-repeat: no-repeat;
     background-position: 50% 50%;
     font-size: 0;
+    &:hover{
+        background-color: @page-header__link--bg-color-hover;
+      }
+    &:active{
+        background-color: @page-header__link--bg-color-active;
+      }
   }
   &__facebook{
     display: inline-block;
@@ -562,6 +654,12 @@ body{
     background-repeat: no-repeat;
     background-position: 50% 50%;
     font-size: 0;
+    &:hover{
+        background-color: @page-header__link--bg-color-hover;
+      }
+    &:active{
+        background-color: @page-header__link--bg-color-active;
+      }
   }
   &__youtube{
     display: inline-block;
@@ -573,6 +671,12 @@ body{
     background-repeat: no-repeat;
     background-position: 50% 50%;
     font-size: 0;
+    &:hover{
+        background-color: @page-header__link--bg-color-hover;
+      }
+    &:active{
+        background-color: @page-header__link--bg-color-active;
+      }
   }
 
   &__logo{
