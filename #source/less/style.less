@@ -137,6 +137,11 @@ body{
     display: none;
   }
 
+  a:first-child{
+    padding-right: 42px;
+    padding-left: 42px;
+  }
+
   a:last-child{
     box-shadow: inset 0px -2px 4px 0px rgba(0, 0, 0, 0.2);
   }
@@ -154,11 +159,11 @@ body{
     vertical-align: middle;
     min-height: 55px;
     width: 100%;
-    padding-top:18px;
-    padding-bottom: 18px;
+    padding: 18px;
     border-top:1px solid #9ac2db;
     border-bottom: 1px solid #678fa8;
     transition: background-color 0.2s,color 0.2s;
+    word-wrap: break-word;
     &:hover{
       background-color:@page-header__link--bg-color-hover;
     }
@@ -217,6 +222,10 @@ body{
   position: relative;
   &__title{
     margin: 0 0 30px 0;
+    word-wrap: break-word;
+  }
+  &__text{
+    word-wrap: break-word;
   }
   &::after{
     content:"";
@@ -248,12 +257,15 @@ body{
   }
   &__title--one{
     margin: 0 0 5px 0;
+    word-wrap: break-word;
   }
   &__text--number-one{
     margin: 0 0 12px 0;
+    word-wrap: break-word;
   }
   &__text--one{
     line-height: 22px;
+    word-wrap: break-word;
   }
   &__section-two{
     width: 320px;
@@ -292,10 +304,12 @@ body{
   }
   &__title--three{
     margin: 0 0 13px 0;
+    word-wrap: break-word;
   }
 
   &__text--three{
     line-height: 22px;
+    word-wrap: break-word;
   }
 
   &__section-four{
@@ -312,9 +326,11 @@ body{
   }
   &__title--four{
     margin: 0 0 13px 0;
+    word-wrap: break-word;
   }
   &__text--four{
     line-height: 23px;
+    word-wrap: break-word;
   }
 
   &__section-five{
@@ -331,9 +347,11 @@ body{
   }
   &__title--five{
     margin: 0 0 14px 0;
+    word-wrap: break-word;
   }
   &__text--five{
     line-height: 21px;
+    word-wrap: break-word;
   }
 
   // css main_part-three
@@ -346,12 +364,15 @@ body{
   }
   &__title--six{
     margin: 0 0 5px 0;
+    word-wrap: break-word;
   }
   &__text--number-six{
     margin: 0 0 12px 0;
+    word-wrap: break-word;
   }
   &__text--six{
     line-height: 22px;
+    word-wrap: break-word;
   }
   &__section-seven{
     width: 320px;
@@ -387,14 +408,17 @@ body{
 
   &__title--eight{
     margin: 0 0 6px 0;
+    word-wrap: break-word;
   }
 
   &__text--number-eight{
     margin: 0 0 11px 0;
+    word-wrap: break-word;
   }
 
   &__text--eight{
     line-height: 22px;
+    word-wrap: break-word;
   }
 
   &__section-nine{
@@ -408,14 +432,17 @@ body{
 
   &__title--nine{
     margin: 0 0 6px 0;
+    word-wrap: break-word;
   }
 
   &__text--number-nine{
     margin: 0 0 11px 0;
+    word-wrap: break-word;
   }
 
   &__text--nine{
     line-height: 22px;
+    word-wrap: break-word;
   }
 
   &__section-ten{
@@ -429,14 +456,17 @@ body{
 
   &__title--ten{
     margin: 0 0 6px 0;
+    word-wrap: break-word;
   }
 
   &__text--number-ten{
     margin: 0 0 11px 0;
+    word-wrap: break-word;
   }
 
   &__text--ten{
     line-height: 22px;
+    word-wrap: break-word;
   }
 
 }
@@ -457,37 +487,28 @@ body{
     font-size: 21px;
     line-height: 26px;
     margin-bottom: 18px;
+    word-wrap: break-word;
   }
 
   &__text{
     line-height: 23px;
     margin-bottom: 36px;
+    word-wrap: break-word;
   }
 
-  // &__link-wrap{
-  //   text-align: center;
-  //   &:hover{
-  //     background-color: @page-header__link--bg-color-hover;
-  //   }
-  //   &:active{
-  //     background-color: @page-header__link--bg-color-active;
-  //   }
-  //   &:active + a{
-  //     color: @page-header__link--color-active;
-  //   }
-  // }
 
   &__link{
     display: block;
     vertical-align: middle;
     background-color: @page-header__link--bg-color;
     box-sizing: border-box;
-    padding:17px 0 17px 0;
+    padding:17px 5px 17px 5px;
     text-transform: uppercase;
     color: @page-header__link--color;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    word-wrap: break-word;
     &:hover{
         background-color: @page-header__link--bg-color-hover;
       }
@@ -514,7 +535,8 @@ body{
   &__title{
     font-size: 21px;
     line-height: 26px;
-    margin:0 0 28px 0;;
+    margin:0 0 28px 0;
+    word-wrap: break-word;
   }
   &__links{
     margin: 0 0 40px 0;
@@ -554,14 +576,17 @@ body{
   }
 
   &__logo{
+    width: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
   }
   &__dev{
     color: black;
     text-transform: uppercase;
-    margin-right: 10px;
+    margin: 0 10px 10px 0;
+    word-wrap: break-word;
   }
   &__dev_logo{
     display: inline-block;
