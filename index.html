@@ -11,7 +11,18 @@
 
       <header class="page-header">
         <div class="page-header__logo-wrap">
-            <image class="logo-img page-header__logo-img" src="img/logotyle-mobile.png" alt="logotype" height="83" width="102">
+          <picture class="logo-img page-header__logo-img">
+
+             <source srcset="img/logotyle-mobile.png"
+                             media="(max-width: 767px)">
+             <source srcset="img/logotyle-tablet.png"
+                             media="(max-width: 1199px)">
+
+              <img src="img/logotype-desktop.png"
+                   alt="logotype">
+          </picture>
+
+            <!-- <image class="logo-img page-header__logo-img" src="img/logotyle-mobile.png" alt="logotype" height="83" width="102"> -->
         </div>
 
         <input class="page-header__burger" id="burger_btn" type="checkbox" name="burger" value="">
@@ -37,7 +48,7 @@
             <img src="img/intro-text-index.png"
                  alt="Welcome to the gorgeous SEDONA, Because the Grand canyon sucks!">
         </picture>
-          
+
       </article>
 
       <article class="about">
@@ -55,7 +66,14 @@
               </section>
 
               <section class="section main__section-two">
-                  <img class="main__section-two-photo" src="img/photo-city@1x.jpg" alt="Фото городка" width="520" height="260">
+                <picture class="main__section-two-photo">
+
+                    <source srcset="img/photo-city-mobile.jpg"
+                               media="(max-width: 1199px)">
+
+                    <img src="img/photo-city-desktop.jpg"
+                         alt="Фото городка">
+                  </picture>
               </section>
           </div>
 
@@ -91,7 +109,16 @@
               </section>
 
               <section class="section main__section-seven">
-                  <img class="main__section-seven-photo" src="img/photo-bridge@1x.jpg" alt="Фото моста" width="520" height="260">
+
+                <picture class="main__section-two-photo">
+
+                    <source srcset="img/photo-bridge-mobile.jpg"
+                               media="(max-width: 1199px)">
+
+                    <img src="img/photo-bridge-desktop.jpg"
+                         alt="Фото мостаа">
+                </picture>
+
               </section>
           </div>
 

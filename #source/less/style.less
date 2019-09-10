@@ -274,6 +274,7 @@ body{
 @media (min-width:@tablet-width) {
   .intro{
     width: @tablet-width;
+    padding: 79px 0 85px 0;
     background-image: url(../img/intro-bg-desktop.jpg);
     &::before{
       content:"";
@@ -282,7 +283,7 @@ body{
       bottom: 0px;
       width: 0;
       height: 0;
-      border-top: 15px solid transparent;
+      border-top: 35px solid transparent;
       border-right: 384px solid @page-header--bg-color;
       border-left: 384px solid @page-header--bg-color;
     }
@@ -290,6 +291,7 @@ body{
     &::after{
       left: 50%;
       transform: translateX(-50%);
+      border-top: 55px solid transparent;
       border-right: 350px solid @page-header--bg-color;
       border-left: 350px solid @page-header--bg-color;
     }
@@ -326,13 +328,30 @@ body{
     border-left: 160px solid @page-header__link--bg-color;
   }
 }
+@media (min-width:@tablet-width) {
+  .about{
+    width: 550px;
+    padding: 50px 32px 48px 32px;
+    &::after{
+      all: unset;
+    }
+    &__title{
+      font-size: 21px;
+    }
+  }
+
+}
+
+
+// *****main*****
+
 
 .main{
   width: 320px;
   margin: 0 auto;
   background-color:@page-header__link--bg-color;
 
-  // css main__part-one
+  // ***** main__part-one *****
 
   &__section-one{
     width: 320px;
@@ -364,6 +383,7 @@ body{
       right: -100px;
     }
   }
+
 
   // css main__part-two
 
@@ -557,6 +577,138 @@ body{
 
 }
 
+// *****media main*****
+@media (min-width:@tablet-width) {
+  .main{
+    width: @tablet-width;
+  }
+}
+
+// ***part_one***
+
+@media (min-width:@tablet-width) {
+  .main__part-one{
+    display: flex;
+  }
+  .main__title--one{
+    font-size: 21px;
+    margin: 5px 0 5px 0;
+  }
+  .main__text--number-one{
+    margin: 0 0 20px 0;
+  }
+  .main__section-one{
+    width: 256px;
+    padding: 40px 45px 40px 45px;
+  }
+  .main__section-two{
+    width: 512px;
+    height: 256px;
+    &-photo{
+      right: 0;
+    }
+  }
+}
+
+// ***part_two***
+@media (min-width:@tablet-width) {
+  .main__part-two{
+    width: @tablet-width;
+    display: flex;
+    flex-direction: row;
+    padding: 26px 0 55px 0;
+  }
+
+  .main__section-three{
+    padding: 0;
+  }
+  .main__section-three--wrap{
+    width: 256px;
+    background-image: url("../img/icon-house-desktop.png");
+    padding: 135px 45px 0 45px;
+    background-position: 50% 21%;
+    background-size: auto;
+    text-align: center;
+  }
+
+  .main__title--three{
+    font-size: 21px;
+    margin: 0 0 20px 0;
+  }
+
+  .main__section-four{
+    padding: 0;
+    order: 3;
+  }
+
+  .main__section-four--wrap{
+    width: 256px;
+    background-image: url("../img/icon-gift-desktop.png");
+    padding: 135px 45px 0 45px;
+    background-position: 50% 18%;
+    background-size: auto;
+    text-align: center;
+
+  }
+
+  .main__title--four{
+    font-size: 21px;
+    margin: 0 0 20px 0;
+  }
+
+  .main__section-five{
+    padding: 0;
+  }
+
+  .main__section-five--wrap{
+    width: 256px;
+    background-image: url("../img/icon-burger-desktop.png");
+    padding: 135px 45px 0 45px;
+    background-position: 50% 21%;
+    background-size: auto;
+    text-align: center;
+  }
+
+  .main__title--five{
+    font-size: 21px;
+    margin: 0 0 20px 0;
+  }
+}
+
+// ***part_three***
+@media (min-width:@tablet-width) {
+  .main__part-three{
+    width: @tablet-width;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main__section-six{
+    width: 256px;
+  }
+  .main__section-seven{
+    width: 512px;
+
+  }
+}
+
+// ***part_four***
+@media (min-width:@tablet-width) {
+  .main__part-four{
+    width: @tablet-width;
+    display: flex;
+    flex-direction: row;
+  }
+  .main__section-eight{
+    border: none;
+  }
+  .main__section-nine{
+    border: none;
+  }
+
+}
+
+
+
 .search{
   width: 320px;
   box-sizing: border-box;
@@ -606,11 +758,35 @@ body{
 
 }
 
+// *****medea search*****
+@media (min-width:@tablet-width) {
+  .search-wrap{
+    width: @tablet-width;
+  }
+  .search{
+    width: 460px;
+  }
+}
+
+// *****map*****
 .map{
   margin: 0 auto;
   width: 320px;
   height: 350px;
 }
+
+// *****media map*****
+
+@media (min-width:@tablet-width) {
+  .map{
+    width: @tablet-width;
+  }
+  iframe{
+    width: @tablet-width;
+  }
+}
+
+// *****footer*****
 
 .footer{
   box-sizing: border-box;
@@ -680,7 +856,6 @@ body{
   }
 
   &__logo{
-    width: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -707,5 +882,18 @@ body{
     &:active{
       background-image: url(../img/htmlacademy_active.png);
     }
+  }
+}
+
+// *****media footer*****
+
+@media (min-width:@tablet-width) {
+  .footer{
+    width: @tablet-width;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
   }
 }
