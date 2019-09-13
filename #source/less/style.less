@@ -245,6 +245,21 @@ body{
 
 }
 
+@media (min-width:@desktop-width) {
+  .page-header{
+    width: @desktop-width;
+    a:nth-of-type(2){
+      margin-right: 100px;
+    }
+    a:nth-of-type(3){
+      margin-left: 100px;
+    }
+    &__nav{
+      justify-content: space-around;
+    }
+  }
+}
+
 // *****intro*****
 
 .intro{
@@ -292,6 +307,34 @@ body{
       left: 50%;
       transform: translateX(-50%);
       border-top: 55px solid transparent;
+      border-right: 350px solid @page-header--bg-color;
+      border-left: 350px solid @page-header--bg-color;
+    }
+  }
+
+}
+
+@media (min-width:@desktop-width) {
+  .intro{
+    width: @desktop-width;
+    padding: 78px 0 86px 0;
+    background-image: url(../img/intro-bg-desktop.jpg);
+    &::before{
+      content:"";
+      position: absolute;
+      display: block;
+      bottom: 0px;
+      width: 0;
+      height: 0;
+      border-top: 58px solid transparent;
+      border-right: 600px solid @page-header--bg-color;
+      border-left: 600px solid @page-header--bg-color;
+    }
+
+    &::after{
+      left: 50%;
+      transform: translateX(-50%);
+      border-top: 58px solid transparent;
       border-right: 350px solid @page-header--bg-color;
       border-left: 350px solid @page-header--bg-color;
     }
@@ -576,6 +619,9 @@ body{
   }
 
 }
+.hide{
+  display: none;
+}
 
 // *****media main*****
 @media (min-width:@tablet-width) {
@@ -584,6 +630,11 @@ body{
   }
 }
 
+@media (min-width:@desktop-width) {
+  .main{
+    width: @desktop-width;
+  }
+}
 // ***part_one***
 
 @media (min-width:@tablet-width) {
@@ -606,6 +657,24 @@ body{
     height: 256px;
     &-photo{
       right: 0;
+    }
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .main{
+    &__section-one {
+      width: 402px;
+      padding: 48px 45px 40px 45px;
+    }
+    &__title--one {
+      margin: 5px 75px 5px 75px;
+    }
+    &__text--one {
+      padding: 0 20px 0 20px;
+    }
+    &__section-two{
+      width: 798px;
     }
   }
 }
@@ -675,6 +744,40 @@ body{
   }
 }
 
+@media (min-width:@desktop-width) {
+  .main{
+    &__part-two{
+      width: @desktop-width;
+      padding: 26px 0 78px 0;
+    }
+    &__section-three{
+      width: 400px;
+      &--wrap{
+        margin: 0 auto;
+        width: 350px;
+      }
+    }
+    &__section-four{
+      width: 400px;
+      &--wrap{
+        margin: 0 auto;
+        width: 350px;
+      }
+    }
+    &__section-five{
+      width: 400px;
+      &--wrap{
+        margin: 0 auto;
+        width: 380px;
+      }
+    }
+  }
+
+  .hide{
+    display: block;
+  }
+}
+
 // ***part_three***
 @media (min-width:@tablet-width) {
   .main__part-three{
@@ -699,6 +802,21 @@ body{
     width: 512px;
     height: 256px;
   }
+}
+
+@media (min-width:@desktop-width) {
+  .main{
+    &__part-three {
+      width: @desktop-width;
+    }
+    &__section-six {
+      width: 400px;
+    }
+    &__section-seven {
+      width: 800px;
+    }
+  }
+
 }
 
 // ***part_four***
@@ -748,7 +866,31 @@ body{
 
 }
 
-
+@media (min-width:@desktop-width) {
+  .main{
+    &__part-four {
+      width: @desktop-width;
+    }
+    &__section-eight {
+      width: 400px;
+    }
+    &__title--eight{
+      margin: 0 70px 6px 70px;
+    }
+    &__section-nine {
+      width: 400px;
+    }
+    &__title--nine{
+      margin: 0 85px 6px 85px;
+    }
+    &__section-ten {
+      width: 400px;
+    }
+    &__title--ten{
+      margin: 0 75px 6px 75px;
+    }
+  }
+}
 
 .search{
   width: 320px;
@@ -818,6 +960,20 @@ body{
     }
 
 }
+
+@media (min-width:@desktop-width) {
+  .search{
+    padding: 77px 0px 65px 0px;
+    &-wrap{
+      width: @desktop-width;
+    }
+    &__text{
+      margin-bottom: 47px;
+    }
+  }
+
+}
+
 // *****map*****
 .map{
   margin: 0 auto;
@@ -836,6 +992,14 @@ body{
   }
 }
 
+@media (min-width:@desktop-width) {
+  .map{
+    width: @desktop-width;
+  }
+  iframe{
+    width: @desktop-width;
+  }
+}
 // *****footer*****
 
 .footer{
@@ -954,5 +1118,10 @@ body{
     &__dev{
       margin: 0 15px 0px 0;
     }
+  }
+}
+@media (min-width:@desktop-width) {
+  .footer{
+    width: @desktop-width;
   }
 }
