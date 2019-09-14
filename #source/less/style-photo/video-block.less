@@ -80,3 +80,66 @@
     z-index: 2;
   }
 }
+
+// *****media video*****
+
+@media (min-width:@tablet-width) {
+  .video{
+    width: 648px;
+    padding: 89px 0 66px 0;
+    &__title-wrap {
+      width: 648px;
+      margin: 0 0 39px 0;
+    }
+    .video__title{
+      font-size: 30px;
+      line-height: 26px;
+      margin: 0 0 29px 0;
+    }
+    .video__text{
+      padding: 0 107px 0 107px;
+    }
+
+    &-post{
+      width: 648px;
+      position: relative;
+    }
+    &__img{
+      width: 648px;
+      height: 499px;
+    }
+    &-post__play{
+      width: 648px;
+      height: 93px;
+      position: absolute;
+      top: auto;
+      bottom: 3px;
+      background-color: rgba(0, 0, 0, 0.7);
+      align-items: center;
+
+      &:after{
+        display: none;
+      }
+    }
+    &-post__scale--wrap {
+      width: 389px;
+      background-color: transparent;
+      flex-shrink: 0;
+    }
+    &-post__replay{
+      order: 0;
+      flex-grow: 0;
+      padding: 0 0 0 0;
+      margin: 0 0 0 17px;
+    }
+    &-post__subtitles{
+      flex-grow: 0;
+      margin: 0px -8px 0 7px;
+    }
+    &-post__fullscreen{
+      flex-grow: 0;
+      margin: 0 21px 0 0px;
+    }
+  }
+
+}

@@ -55,7 +55,7 @@
 
           <section class="photo__title-wrap">
               <h1 class="title photo__title">Фото и видео</h1>
-              <p class="text photo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут<br> вам забыть о политике и экономике.</p>
+              <p class="text photo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут<br class="hide"> вам забыть о политике и экономике.</p>
           </section>
 
           <section class="post">
@@ -74,8 +74,10 @@
               </a>
 
               <div class="post__about">
-                  <h2 class="title post__title">неродные просторы</h2>
-                  <p class="text post__text">Автор фото: Борис</p>
+                  <div class="post__title-text--wrap">
+                      <h2 class="title post__title">неродные просторы</h2>
+                      <p class="text post__text">Автор фото: Борис</p>
+                  </div>
                   <p class="text post__likes">1350</p>
               </div>
           </section>
@@ -96,8 +98,10 @@
               </a>
 
               <div class="post__about">
+                <div class="post__title-text--wrap">
                   <h2 class="title post__title">Местная растительность</h2>
                   <p class="text post__text">Автор фото: Сергей</p>
+                </div>
                   <p class="text post__likes">143</p>
               </div>
           </section>
@@ -118,8 +122,10 @@
               </a>
 
               <div class="post__about">
+                <div class="post__title-text--wrap">
                   <h2 class="title post__title">Дорога на север</h2>
                   <p class="text post__text">Автор фото: Петр</p>
+                </div>
                   <p class="text post__likes">96</p>
               </div>
           </section>
@@ -140,8 +146,10 @@
               </a>
 
               <div class="post__about">
+                <div class="post__title-text--wrap">
                   <h2 class="title post__title">Мост дьявола</h2>
                   <p class="text post__text">Автор фото: Антон</p>
+                </div>
                   <p class="text post__likes">254</p>
               </div>
           </section>
@@ -152,17 +160,17 @@
       <article class="video">
           <section class="video__title-wrap">
               <h1 class="title video__title">Все еще сомневаетесь?</h1>
-              <p class="text video__text">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
+              <p class="text video__text">Смотрите видеопрезентацию и<br class="hide"> скорее за билетами, пока они не<br class="hide"> подорожали в очередной раз!</p>
           </section>
 
         <div class="video-post">
             <a href="#">
                 <picture>
                     <source media="(min-width: 1200px)"
-                            srcset="img/photo-4-desktop.jpg 1x" >
+                            srcset="img/video-desktop.jpg 1x" >
 
                     <source media="(min-width: 768px)"
-                            srcset="img/photo-4-tablet.jpg 1x" >
+                            srcset="img/video-tablet.jpg 1x" >
 
                     <img src="img/video-mobile.jpg"
                          alt="видео" class="video__img">
@@ -170,12 +178,45 @@
             </a>
 
             <div class="video-post__play">
-                <a href="#" class="video-post__replay"><img src="img/replay.png" alt="replay"  width="16" height="20"></a>
+                <a href="#" class="video-post__replay">
+                  <picture>
+                      <source media="(min-width: 768px)"
+                              srcset="img/replay-white.png 1x" >
+
+                      <img src="img/replay.png" alt="replay"  width="16" height="20">
+                  </picture>
+                </a>
                 <div class="video-post__scale--wrap">
-                    <a href="#"><img src="img/volume_scale-mobile.png" alt="scale" class="video-post__scale" width="235" height="9"></a>
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                    srcset="img/volume_scale-desktop.png 1x" >
+
+                            <source media="(min-width: 768px)"
+                                    srcset="img/volume_scale-tablet.png 1x" >
+
+                            <img src="img/volume_scale-mobile.png"
+                                 alt="scale" class="video-post__scale">
+                        </picture>
+
+                    </a>
                 </div>
-                <a href="#" class="video-post__subtitles"><img src="img/subtitles.png" alt="subtitles"  width="32" height="20"></a>
-                <a href="#"  class="video-post__fullscreen"><img src="img/fullscreen.png" alt="fullscreen" width="20" height="20"></a>
+                <a href="#" class="video-post__subtitles">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                                srcset="img/subtitles-white.png 1x" >
+
+                        <img src="img/subtitles.png" alt="subtitles"  width="32" height="20">
+                    </picture>
+                </a>
+                <a href="#"  class="video-post__fullscreen">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                                srcset="img/fullscreen-white.png 1x" >
+
+                        <img src="img/fullscreen.png" alt="fullscreen" width="20" height="20">
+                    </picture>
+                </a>
             </div>
         </div>
 
