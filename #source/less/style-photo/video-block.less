@@ -114,7 +114,7 @@
       position: absolute;
       top: auto;
       bottom: 3px;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.5);
       align-items: center;
 
       &:after{
@@ -140,6 +140,31 @@
       flex-grow: 0;
       margin: 0 21px 0 0px;
     }
+  }
+
+}
+
+@media (min-width:@desktop-width) {
+  .video {
+    width: @desktop-width;
+    padding: 69px 0 111px 0;
+    &__title-wrap {
+      margin: 0 auto 36px auto;
+    }
+    &-post {
+      width: 800px;
+    }
+    &__img {
+      width: 800px;
+      height: 500px;
+    }
+    &-post__play {
+      width: 800px;
+    }
+    &-post__scale--wrap {
+      width: 540px;
+    }
+
   }
 
 }

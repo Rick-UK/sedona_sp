@@ -702,6 +702,12 @@ textarea::placeholder {
   text-transform: uppercase;
   border: none;
 }
+.form__button:hover {
+  background-color: #669ec0;
+}
+.form__button:active {
+  background-color: #5496bd;
+}
 .form__necessarily-text {
   display: none;
 }

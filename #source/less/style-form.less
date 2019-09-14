@@ -706,6 +706,12 @@ textarea::placeholder{
     line-height: 26px;
     text-transform: uppercase;
     border: none;
+    &:hover{
+      background-color: @page-header__link--bg-color-hover;
+    }
+    &:active{
+      background-color: @page-header__link--bg-color-active;
+    }
   }
   &__necessarily-text{
     display: none;
